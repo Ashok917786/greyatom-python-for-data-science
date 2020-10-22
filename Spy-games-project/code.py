@@ -137,16 +137,16 @@ def write_file(secret_message,path):
        
     #Opening a file named 'secret_message' in 'write' mode
     f4=open(secret_message,'a+')
-
     #Writing to the file
-    #Closing the file
+    file.write(secret_msg)
+
+     #Closing the file
+    file.close()
 
 #Calling the function to write inside the file    
-#f3=write_file(secret_msg,final_path)
+write_file(secret_msg, final_path)
 
 #Printing the entire secret message
 print(secret_msg)
 
 #Code ends here
-
-
