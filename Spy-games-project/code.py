@@ -133,19 +133,18 @@ secret_msg=" ".join(message_parts)
 
 
 #Function to write inside a file
-def write_file(secret_message,path):
+def write_file(secret_msg,path):
        
-    #Opening a file named 'secret_message' in 'write' mode
-    f4=open(secret_message,'a+')
-    #Writing to the file
+      #Opening a file named 'secret_message' in 'write' mode
+    file = open(path, 'a+')
+
+     #Writing to the file
     file.write(secret_msg)
 
      #Closing the file
     file.close()
-
 #Calling the function to write inside the file    
 write_file(secret_msg, final_path)
-
 #Printing the entire secret message
 print(secret_msg)
 
